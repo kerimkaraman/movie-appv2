@@ -5,7 +5,7 @@ import { ThemeSwitcher } from '../context/ThemeContext';
 import Logo from '../assets/logo.png'
 import DarkMode from '../assets/dark-mode.png'
 import LightMode from '../assets/light-mode.png'
-import { NavLink, Link, BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 function Header() {

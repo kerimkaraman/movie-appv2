@@ -1,7 +1,7 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, {  useState } from 'react';
 import Header from './components/Header';
 import { ThemeSwitcher } from './context/ThemeContext';
-import { createBrowserRouter, Router, RouterProvider, Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import TopRated from './pages/TopRated';
 import MainPage from './pages/MainPage';
 import Upcoming from './pages/Upcoming';

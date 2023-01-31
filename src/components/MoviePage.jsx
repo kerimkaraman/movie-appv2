@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 import { movieIdContext } from '../context/MovieIdContext';
 
 function MoviePage() {
+    /* eslint-disable */
     const { movieID, setMovieID } = useContext(movieIdContext)
     const [movieDetails, setMovieDetails] = useState([]);
     /*https://api.themoviedb.org/3/movie/{movie_id}?api_key=fa73fc5e116e4f5899e71120fa20d4d&language=tr-TR */
@@ -12,7 +13,7 @@ function MoviePage() {
     useEffect(() => {
         axios.get(`https://api.themoviedb.org/3/movie/${movieID}?api_key=fa73fc5e116e4f5899e71120fa20d4de&language=tr-TR`)
             .then(res => { setMovieDetails(res.data) })
-    }, [])
+    }, [movieID])
     let dollar = Intl.NumberFormat("en-US")
     const color = movieDetails.vote_average <= 7 ? "#BF0000" : "#73AC70"
     return (

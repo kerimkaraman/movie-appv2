@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { useCallback, useContext } from 'react';
+import React from 'react';
+import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { movieIdContext } from '../context/MovieIdContext';
 
@@ -11,6 +11,7 @@ function SmallCard(props) {
         setMovieID(props.id)
         navigate(`/movie/${props.id}`, { replace: true })
     }
+    /* eslint-disable */
     const { movieID, setMovieID } = useContext(movieIdContext)
 
     return (
