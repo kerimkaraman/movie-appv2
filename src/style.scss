@@ -8,11 +8,11 @@
 }
 
 // Colors
-$clr-darkblack: #222323;
-$clr-black: #374850;
+$clr-darkblack: #121212;
+$clr-black: #121212;
 $clr-white: #FFFFFF;
 $clr-blue: #0071BC;
-$clr-grey: #CFD8DC;
+$clr-grey: #CECECE;
 $clr-red: #BF0000;
 $clr-green: #73AC70;
 
@@ -203,7 +203,7 @@ $clr-green: #73AC70;
             padding: 4rem 4rem;
             background-color: $clr-grey;
             border-radius: 10px;
-
+            
             .title-area {
                 display: flex;
                 justify-content: center;
@@ -234,11 +234,13 @@ $clr-green: #73AC70;
                 width: 100%;
                 margin: 0 auto;
                 gap: 6rem;
+                
                 .overview-area {
                     width: 50%;
                     font-size: 2rem;
                     text-indent: 40px;
                     text-align: left;
+                    
                 }
                 .info-area {
                     display: flex;
