@@ -29,14 +29,10 @@ function Header() {
         <div className='header'>
             <div className="logo">
                 <img src={Logo} alt="" />
-                <p>MOVIE APP</p>
-            </div>
-            <div className="search-area">
-                <input type="text" />
-                <button>Search</button>
+                <Link className='logo-name' to="/">MOVIE APP</Link>
             </div>
             <div className="header-links">
-                <Link to="/">Popular Movies</Link>
+                <Link to="popular">Popular Movies</Link>
                 <Link to="top-rated">Top Rated Movies</Link>
                 <Link to="upcoming">Upcoming Movies</Link>
             </div>

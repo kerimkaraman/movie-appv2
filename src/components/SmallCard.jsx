@@ -26,7 +26,7 @@ function SmallCard(props) {
                 </div>
                 <div className="details-area">
                     <p><span>Çıkış Tarihi:</span> {props.release_date}</p>
-                    <p className='vote'><span>Ort. Puan:</span> <p style={{ color: color }}>{props.vote_average}</p></p>
+                    <p className='vote'><span>Ort. Puan:</span> <p style={{ color: color }}>{(props.vote_average).toFixed(1)}</p></p>
                 </div>
             </div>
         </div>

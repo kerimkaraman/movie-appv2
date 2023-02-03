@@ -1,4 +1,4 @@
-import React, {  useState } from 'react';
+import React, { useState } from 'react';
 import Header from './components/Header';
 import { ThemeSwitcher } from './context/ThemeContext';
 import { Routes, Route } from 'react-router-dom'
@@ -7,6 +7,8 @@ import MainPage from './pages/MainPage';
 import Upcoming from './pages/Upcoming';
 import { movieIdContext } from './context/MovieIdContext';
 import MoviePage from './components/MoviePage';
+import Popular from './pages/Popular';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -27,9 +29,11 @@ function App() {
           <Route path="/" element={<MainPage />} />
           <Route path="/movie/:movieID" element={<MoviePage />} />
           <Route path='/top-rated' element={<TopRated />} />
+          <Route path='/popular' element={<Popular />} />
           <Route path='/upcoming' element={<Upcoming />} />
         </Routes>
       </movieIdContext.Provider>
+      <Footer />
     </div>
   );
 }
